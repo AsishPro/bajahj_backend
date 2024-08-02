@@ -3,8 +3,7 @@ from flask_cors import CORS
 from datetime import datetime
 
 app = Flask(__name__)
-
-
+CORS(app) 
 def process_data(data):
     
     numbers = [item for item in data if item.isdigit()]
